@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Fraud Prediction</h2>
+
+<form method="POST">
+
+<label>Order Value</label>
+<input type="number" name="order_value" required>
+
+<label>Return Count</label>
+<input type="number" name="return_count" required>
+
+<label>Customer Age</label>
+<input type="number" name="customer_age" required>
+
+<label>Days To Return</label>
+<input type="number" name="days_to_return" required>
+
+<button type="submit">Predict</button>
+
+</form>
+
+{% if result %}
+
+<h3>{{ result }}</h3>
+
+{% endif %}
+
+{% endblock %}S
