@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Fraud Detection</title>
 
-<title>Fraud Detection</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+```
+<!-- Correct CSS Link for Flask -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+```
 
 </head>
 
 <body>
 
-<h1>E-commerce Return & Refund Fraud Detection</h1>
-
+```
+<!-- Navigation -->
 <nav>
-
-<a href="/">Home</a>
-
-<a href="/predict">Prediction</a>
-
-<a href="/dashboard">Dashboard</a>
-
+    <h2>E-commerce Return & Refund Fraud Detection</h2>
+    <a href="/">Home</a>
+    <a href="/predict">Prediction</a>
+    <a href="/dashboard">Dashboard</a>
 </nav>
 
 <hr>
 
-{% block content %}
-
-{% endblock %}
+<!-- Page Content -->
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+```
 
 </body>
 </html>
